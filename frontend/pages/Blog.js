@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { fetchAPI } from "../lib/api";
 
-const Home = ({ articles, categories, homepage }) => {
+const Blog = ({ articles, categories = ["", ""], homepage }) => {
   return (
     <Layout categories={categories}>
       <Seo seo={homepage.attributes.seo} />
@@ -41,4 +41,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Home;
+export default Blog;

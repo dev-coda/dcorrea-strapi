@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { Navbar } from "../layout/Navbar";
 
 class MyDocument extends Document {
   render() {
@@ -28,6 +29,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
+          <Navbar title="David Correa"></Navbar>
           <Main />
           <NextScript />
         </body>
